@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "395222970956",
+    "project_id": "anythinggpt",
+    "storage_bucket": "anythinggpt.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:395222970956:android:d5cfda199ff30cf4617ae9",
+        "android_client_info": {
+          "package_name": "com.example.anything_gpt"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "395222970956-15hssa14e18tqdrkl04e9t59k11bvipa.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCZ1YY-YoNQpI5qCFi1WQf4iTWHMf2v0zk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "395222970956-15hssa14e18tqdrkl04e9t59k11bvipa.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "395222970956-q2der1lkf7t5qraedsre1dtbmknsvgih.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.anythingGpt"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -18,19 +18,35 @@
 
   <meta charset="UTF-8">
   <meta content="IE=Edge" http-equiv="X-UA-Compatible">
-  <meta name="description" content="A new Flutter project.">
 
   <!-- iOS meta tags & icons -->
   <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <meta name="apple-mobile-web-app-title" content="anything_gpt">
-  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+  <!-- <meta name="apple-mobile-web-app-status-bar-style" content="black"> -->
+  <meta name="apple-mobile-web-app-title" content="AnythingGPT">
+  <meta name="google-signin-client_id" content="395222970956-uqh1q2epln10pjhigv1rmhuscrl9uk15.apps.googleusercontent.com">
+  <meta name="google-site-verification" content="d-QYZZTSNAiw60pmkt5Oa9khcfiI2o8xnDGriLv6BuA" />
+  <link rel="apple-touch-icon" href="/icons/Icon-192.png">
 
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" href="favicon.png"/>
-
-  <title>anything_gpt</title>
+  <title>AnythingGPT</title>
   <link rel="manifest" href="manifest.json">
+  <meta property="og:url" content="https://anythinggpt.web.app" />
+  <meta name="description" content="AI assistant capable of answering any questions and generating images from text prompts.">
+  <meta property="og:title" content="AnythingGPT" />
+  <meta property="og:description" content="AI assistant capable of answering any questions and generating images from text prompts." />
+  <meta property="og:image" content="https://anythinggpt.web.app/favicon.ico" />
+  <meta property="og:image:alt" content="AnythingGPT Logo" />
+	<link rel="canonical" href="https://anythinggpt.web.app" />
+  <link rel="icon" href="/favicon.ico" />
+	<link rel="shortcut icon" href="/favicon.ico" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="AnythingGPT" />
+  <meta property="og:locale" content="en-Us" />
+  <meta property="og:image:width" content="282" />
+  <meta property="og:image:height" content="282" />
+  <meta name="robots" content="index,follow" />
+  <meta name="googlebot" content="index,follow" />
+  <meta name="theme-color" content="#8D62EC" />
+  <meta name="apple-mobile-web-app-status-bar" content="#8D62EC" />
 
   <script>
     // The value below is injected by flutter build, do not touch.
@@ -38,8 +54,20 @@
   </script>
   <!-- This script adds the flutter initialization JS code -->
   <script src="flutter.js" defer></script>
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  <style>
+    .loader {
+      position: absolute;
+      top:0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+    }
+  </style>
 </head>
 <body>
+  <lottie-player class="loader" src="loader.json" mode="bounce" background="transparent"  speed="1"  style="width: 300px; height: 300px;" autoplay></lottie-player>
   <script>
     window.addEventListener('load', function(ev) {
       // Download main.dart.js
@@ -50,6 +78,8 @@
         onEntrypointLoaded: function(engineInitializer) {
           engineInitializer.initializeEngine().then(function(appRunner) {
             appRunner.runApp();
+            var anim = document.getElementsByClassName('loader')[0];
+            anim.style.display = "none";
           });
         }
       });
